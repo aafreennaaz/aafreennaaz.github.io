@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -29,11 +29,17 @@
 
     <!-- Hero Section -->
     <header class="hero" id="about">
+        <div class="hero-bg-effects">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="sparkle-grid"></div>
+        </div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
                     <p class="hero-greeting">Hello, I'm</p>
-                    <h1>Aafreen Naaz</h1>
+                    <h1>Aafreen <span class="highlight">Naaz</span></h1>
                     <p class="hero-tagline">Finance Analyst &mdash; P2P / O2C / R2R</p>
                     <p class="hero-subtitle">
                         M.Com | LLB | Public Speaker | L&amp;D Trainer @SpeakUptoStandOut | Toastmasters
@@ -43,13 +49,14 @@
                         Bengaluru, Karnataka, India
                     </p>
                     <div class="hero-cta">
-                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                        <a href="#experience" class="btn btn-outline">View Experience</a>
+                        <a href="#contact" class="btn btn-primary"><span>Get in Touch</span></a>
+                        <a href="#experience" class="btn btn-outline"><span>View Experience</span></a>
                     </div>
                 </div>
                 <div class="hero-visual">
                     <div class="hero-avatar">
-                        <div class="avatar-placeholder">AN</div>
+                        <div class="avatar-ring"></div>
+                        <img src="profile.jpg" alt="Aafreen Naaz" class="profile-photo">
                     </div>
                 </div>
             </div>
