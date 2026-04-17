@@ -1739,10 +1739,10 @@
 </script>
 
 <!-- Background Music -->
-<audio id="bgMusic" loop preload="auto">
+<audio id="bgMusic" loop preload="auto" autoplay>
     <source src="bgmusic.mp3" type="audio/mpeg">
 </audio>
-<button class="music-toggle" id="musicToggle" title="Toggle Music">
+<button class="music-toggle playing" id="musicToggle" title="Toggle Music">
     <div class="bars"><div class="bar" style="height:6px;"></div><div class="bar" style="height:10px;"></div><div class="bar" style="height:4px;"></div><div class="bar" style="height:8px;"></div></div>
 </button>
 <script>
@@ -1750,22 +1750,22 @@
     var audio=document.getElementById('bgMusic');
     var btn=document.getElementById('musicToggle');
     audio.volume=0.3;
-    var started=false;
+    // Try autoplay immediately
+    audio.play().catch(function(){});
+    // Button only used to stop/resume
     btn.addEventListener('click',function(){
-        if(audio.paused){audio.play().then(function(){btn.classList.add('playing');started=true;}).catch(function(){});}
+        if(audio.paused){audio.play().then(function(){btn.classList.add('playing');}).catch(function(){});}
         else{audio.pause();btn.classList.remove('playing');}
     });
-    // Auto-play on first user interaction
-    function autoStart(){
-        if(started)return;
-        audio.play().then(function(){btn.classList.add('playing');started=true;}).catch(function(){});
-        document.removeEventListener('click',autoStart);
-        document.removeEventListener('scroll',autoStart);
-        document.removeEventListener('keydown',autoStart);
+    // Fallback: if browser blocked autoplay, start on any interaction
+    function tryPlay(){
+        if(!audio.paused)return;
+        audio.play().then(function(){btn.classList.add('playing');}).catch(function(){});
     }
-    document.addEventListener('click',autoStart,{once:true});
-    document.addEventListener('scroll',autoStart,{once:true});
-    document.addEventListener('keydown',autoStart,{once:true});
+    document.addEventListener('click',tryPlay,{once:true});
+    document.addEventListener('scroll',tryPlay,{once:true});
+    document.addEventListener('keydown',tryPlay,{once:true});
+    document.addEventListener('touchstart',tryPlay,{once:true});
 })();
 </script>
 </body>
