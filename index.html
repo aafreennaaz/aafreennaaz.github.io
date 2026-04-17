@@ -631,7 +631,7 @@
             <a href="#courses" class="hero-action-card card-pres">
                 <div class="card-icon">🎯</div>
                 <div>
-                    <div class="card-title">Presentation Mastery</div>
+                    <div class="card-title">Art of Presentation</div>
                     <div class="card-desc">Art of delivering impactful presentations</div>
                 </div>
                 <span class="card-arrow">&rarr;</span>
@@ -967,7 +967,7 @@
             <div class="service-desc">Comprehensive L&amp;D training programs designed to develop communication, leadership, and team skills.</div>
             <ul class="service-features">
                 <li>Communication Skills Workshop</li>
-                <li>Presentation Mastery Training</li>
+                <li>Art of Presentation Training</li>
                 <li>Leadership Development Program</li>
                 <li>Team Building Activities</li>
                 <li>Public Speaking Bootcamp</li>
@@ -1632,14 +1632,14 @@
         {name:'Empathetic Communication',cat:'Communication Fundamentals',diff:'Intermediate'},
         {name:'Clarity & Conciseness',cat:'Communication Fundamentals',diff:'Beginner'},
         {name:'Feedback Techniques',cat:'Communication Fundamentals',diff:'Intermediate'},
-        // Presentation Mastery
-        {name:'Structuring a Speech',cat:'Presentation Mastery',diff:'Beginner'},
-        {name:'Visual Aid Design',cat:'Presentation Mastery',diff:'Intermediate'},
-        {name:'Opening & Closing Techniques',cat:'Presentation Mastery',diff:'Intermediate'},
-        {name:'Handling Q&A Sessions',cat:'Presentation Mastery',diff:'Intermediate'},
-        {name:'Engaging Your Audience',cat:'Presentation Mastery',diff:'Intermediate'},
-        {name:'Storytelling in Presentations',cat:'Presentation Mastery',diff:'Advanced'},
-        {name:'Persuasive Presentations',cat:'Presentation Mastery',diff:'Advanced'},
+        // Art of Presentation
+        {name:'Structuring a Speech',cat:'Art of Presentation',diff:'Beginner'},
+        {name:'Visual Aid Design',cat:'Art of Presentation',diff:'Intermediate'},
+        {name:'Opening & Closing Techniques',cat:'Art of Presentation',diff:'Intermediate'},
+        {name:'Handling Q&A Sessions',cat:'Art of Presentation',diff:'Intermediate'},
+        {name:'Engaging Your Audience',cat:'Art of Presentation',diff:'Intermediate'},
+        {name:'Storytelling in Presentations',cat:'Art of Presentation',diff:'Advanced'},
+        {name:'Persuasive Presentations',cat:'Art of Presentation',diff:'Advanced'},
         // Leadership Development
         {name:'Leading by Example',cat:'Leadership Development',diff:'Beginner'},
         {name:'Decision Making',cat:'Leadership Development',diff:'Intermediate'},
@@ -1696,7 +1696,7 @@
     ];
 
     var CAT_ICONS={
-        'Communication Fundamentals':'🎤','Presentation Mastery':'🎯','Leadership Development':'👑',
+        'Communication Fundamentals':'🎤','Art of Presentation':'🎯','Leadership Development':'👑',
         'Public Speaking':'🗣️','Body Language':'🎭','Storytelling & Narrative':'📖',
         'Voice & Diction':'🎙️','Meeting Facilitation':'🤝','Professional Communication':'💼',
         'Toastmasters Pathway':'🏆'
@@ -1722,7 +1722,7 @@
         sumHtml+='<div class="dsa-stat"><div class="ds-num">'+Object.keys(cats).length+'</div><div class="ds-label">Categories</div></div>';
         document.getElementById('dsaSummary').innerHTML=sumHtml;
         var catHtml='';
-        var catOrder=['Communication Fundamentals','Presentation Mastery','Leadership Development','Public Speaking','Body Language','Storytelling & Narrative','Voice & Diction','Meeting Facilitation','Professional Communication','Toastmasters Pathway'];
+        var catOrder=['Communication Fundamentals','Art of Presentation','Leadership Development','Public Speaking','Body Language','Storytelling & Narrative','Voice & Diction','Meeting Facilitation','Professional Communication','Toastmasters Pathway'];
         catOrder.forEach(function(cat){
             if(!cats[cat])return;
             var icon=CAT_ICONS[cat]||'📝';
