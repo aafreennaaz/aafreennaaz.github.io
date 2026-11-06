@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aafreen Naaz — Founder @SpeakUptoStandOut | L&amp;D Trainer at Cargill</title>
-    <meta name="description" content="Aafreen Naaz — Founder of SpeakUptoStandOut, L&D Trainer at Cargill, Bengaluru. Book a session for speaking coaching, career guidance & more.">
+    <meta name="description" content="Aafreen Naaz — Founder of SpeakUptoStandOut, L&D Trainer at Cargill, Bengaluru. Book a session for speaking coaching, accent training & more.">
     <meta property="og:title" content="Hi, I'm Aafreen Naaz — Founder @SpeakUptoStandOut | L&D Trainer">
-    <meta property="og:description" content="Founder of SpeakUptoStandOut | L&D Trainer at Cargill, Bengaluru. Book sessions for speaking coaching, career guidance & leadership development.">
+    <meta property="og:description" content="Founder of SpeakUptoStandOut | L&D Trainer at Cargill, Bengaluru. Book sessions for speaking coaching, accent training & leadership development.">
     <meta property="og:image" content="https://aafreennaaz.github.io/profile.jpg">
     <meta property="og:url" content="https://aafreennaaz.github.io">
     <meta property="og:type" content="website">
@@ -550,19 +550,6 @@
             .date-grid { grid-template-columns: repeat(3, 1fr); }
         }
 
-        /* Music Toggle */
-        .music-toggle { position: fixed; bottom: 24px; left: 24px; z-index: 150; width: 48px; height: 48px; border-radius: 50%; background: var(--bg-card); border: 1px solid var(--border); color: var(--text); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; transition: all .35s; box-shadow: 0 4px 20px rgba(0,0,0,.3); }
-        .music-toggle:hover { border-color: var(--accent); transform: scale(1.1); box-shadow: 0 0 20px rgba(236,72,153,.2); }
-        .music-toggle.playing { border-color: var(--accent); background: var(--accent-glow); }
-        .music-toggle .bars { display: flex; align-items: flex-end; gap: 2px; height: 16px; }
-        .music-toggle .bar { width: 3px; background: var(--accent); border-radius: 2px; animation: none; }
-        .music-toggle.playing .bar { animation: music-bar .6s ease-in-out infinite alternate; }
-        .music-toggle.playing .bar:nth-child(1) { animation-delay: 0s; }
-        .music-toggle.playing .bar:nth-child(2) { animation-delay: .15s; }
-        .music-toggle.playing .bar:nth-child(3) { animation-delay: .3s; }
-        .music-toggle.playing .bar:nth-child(4) { animation-delay: .1s; }
-        @keyframes music-bar { 0% { height: 4px; } 100% { height: 16px; } }
-
         /* Admin Panel */
         .admin-login-overlay{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.85);backdrop-filter:blur(15px);align-items:center;justify-content:center;padding:1rem}
         .admin-login-overlay.active{display:flex}
@@ -575,7 +562,7 @@
         .admin-login-box .login-btn:hover{background:var(--accent-l);transform:translateY(-1px)}
         .admin-login-box .login-error{color:var(--red);font-size:.82rem;margin-top:.5rem;display:none}
         .admin-login-box .login-close{position:absolute;top:12px;right:16px;background:none;border:none;color:var(--text-3);font-size:1.5rem;cursor:pointer}
-        .admin-fab{position:fixed;bottom:24px;left:80px;z-index:150;width:48px;height:48px;border-radius:50%;background:var(--bg-card);border:1px solid var(--border);color:var(--text-3);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.2rem;transition:all .35s;box-shadow:0 4px 20px rgba(0,0,0,.3)}
+        .admin-fab{position:fixed;bottom:24px;left:24px;z-index:150;width:48px;height:48px;border-radius:50%;background:var(--bg-card);border:1px solid var(--border);color:var(--text-3);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.2rem;transition:all .35s;box-shadow:0 4px 20px rgba(0,0,0,.3)}
         .admin-fab:hover{border-color:var(--accent);color:var(--accent-l);transform:scale(1.1);box-shadow:0 0 20px rgba(236,72,153,.2)}
         .admin-fab.logged-in{border-color:var(--green);color:var(--green);box-shadow:0 0 15px rgba(34,197,94,.2)}
         .admin-toolbar{display:none;position:fixed;top:0;left:0;right:0;z-index:9998;background:linear-gradient(135deg,rgba(236,72,153,0.95),rgba(168,85,247,0.95));backdrop-filter:blur(10px);padding:10px 2rem;color:#fff;font-size:.82rem;font-weight:600;align-items:center;justify-content:space-between;box-shadow:0 4px 30px rgba(0,0,0,.3)}
@@ -655,8 +642,8 @@
 
         /* Cards: white glass, soft shadow, gradient edge, tilt + glare */
         html:not([data-theme="dark"]) :is(.hero-action-card, .exp-card, .skill-card, .edu-card, .session-card, .service-card, .proj-card, .testi-card, .achieve-card, .expertise-card, .contact-card, .dsa-stat, .dsa-cat-card, .philosophy, .co-chip) { background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.82)); backdrop-filter: blur(6px); box-shadow: var(--shadow-soft); }
-        html:not([data-theme="dark"]) :is(.hero-action-card, .exp-card, .skill-card, .edu-card, .session-card, .service-card, .proj-card, .testi-card, .achieve-card, .expertise-card, .contact-card, .dsa-stat, .dsa-cat-card, .booking-badge, .music-toggle, .admin-fab):hover { box-shadow: var(--shadow-pop); }
-        html:not([data-theme="dark"]) :is(.booking-badge, .music-toggle, .admin-fab) { box-shadow: var(--shadow-soft); }
+        html:not([data-theme="dark"]) :is(.hero-action-card, .exp-card, .skill-card, .edu-card, .session-card, .service-card, .proj-card, .testi-card, .achieve-card, .expertise-card, .contact-card, .dsa-stat, .dsa-cat-card, .booking-badge, .admin-fab):hover { box-shadow: var(--shadow-pop); }
+        html:not([data-theme="dark"]) :is(.booking-badge, .admin-fab) { box-shadow: var(--shadow-soft); }
         html:not([data-theme="dark"]) :is(.rating-panel) { box-shadow: -20px 0 50px -20px rgba(31,16,41,.25); }
         html:not([data-theme="dark"]) .video-main { box-shadow: var(--shadow-pop); }
         .fx-tilt { transform-style: preserve-3d; will-change: transform; }
@@ -1045,21 +1032,21 @@
             <div class="session-type">1:1 Speaking Session &middot; 60 mins</div>
             <div class="session-rating">&#9733;&#9733;&#9733;&#9733;&#9733; 5.0</div>
             <div class="session-price">
-                <span class="current">&#8377;99</span>
+                <span class="current">&#8377;499</span>
                 <span class="original">&#8377;1,499</span>
             </div>
-            <a href="#" onclick="openBooking('speaking','Speaking Coaching (VC)',99,60);return false;" class="session-btn">Book Now &rarr;</a>
+            <a href="#" onclick="openBooking('speaking','Speaking Coaching (VC)',499,60);return false;" class="session-btn">Book Now &rarr;</a>
         </div>
         <div class="session-card popular">
-            <div class="session-icon">💼</div>
-            <div class="session-name">Career Guidance (VC)</div>
-            <div class="session-type">1:1 Career Strategy &middot; 60 mins</div>
+            <div class="session-icon">🗣️</div>
+            <div class="session-name">Learn Accent (VC)</div>
+            <div class="session-type">1:1 Accent &amp; Pronunciation Training &middot; 60 mins</div>
             <div class="session-rating">&#9733;&#9733;&#9733;&#9733;&#9733; 5.0</div>
             <div class="session-price">
-                <span class="current">&#8377;99</span>
+                <span class="current">&#8377;499</span>
                 <span class="original">&#8377;999</span>
             </div>
-            <a href="#" onclick="openBooking('career','Career Guidance (VC)',99,60);return false;" class="session-btn">Book Now &rarr;</a>
+            <a href="#" onclick="openBooking('accent','Learn Accent (VC)',499,60);return false;" class="session-btn">Book Now &rarr;</a>
         </div>
         <div class="session-card">
             <div class="session-icon">🎯</div>
@@ -1067,20 +1054,20 @@
             <div class="session-type">Presentation Feedback &middot; 60 mins</div>
             <div class="session-rating">&#9733;&#9733;&#9733;&#9733;&#9733; 5.0</div>
             <div class="session-price">
-                <span class="current">&#8377;99</span>
+                <span class="current">&#8377;499</span>
                 <span class="original">&#8377;799</span>
             </div>
-            <a href="#" onclick="openBooking('presentation','Presentation Review (VC)',99,60);return false;" class="session-btn">Book Now &rarr;</a>
+            <a href="#" onclick="openBooking('presentation','Presentation Review (VC)',499,60);return false;" class="session-btn">Book Now &rarr;</a>
         </div>
         <div class="session-card">
-            <div class="session-icon">📞</div>
-            <div class="session-name">Quick Call</div>
-            <div class="session-type">Phone Call &middot; Queries &amp; Clarification &middot; 20 mins</div>
+            <div class="session-icon">🎙️</div>
+            <div class="session-name">Public Speaking (VC)</div>
+            <div class="session-type">1:1 Practice &amp; Feedback &middot; 30 mins</div>
             <div class="session-price">
-                <span class="current">&#8377;99</span>
-                <span class="original">&#8377;299</span>
+                <span class="current">&#8377;249</span>
+                <span class="original">&#8377;499</span>
             </div>
-            <a href="#" onclick="openBooking('call','Quick Call',99,20);return false;" class="session-btn">Book Now &rarr;</a>
+            <a href="#" onclick="openBooking('publicspeaking','Public Speaking (VC)',249,30);return false;" class="session-btn">Book Now &rarr;</a>
         </div>
         <div class="session-card">
             <div class="session-icon">💬</div>
@@ -1095,13 +1082,13 @@
         <div class="session-card popular">
             <div class="session-icon">👑</div>
             <div class="session-name">Leadership Coaching (VC)</div>
-            <div class="session-type">Leadership &amp; Team Skills &middot; 60 mins</div>
+            <div class="session-type">Leadership &amp; Team Skills &middot; 30 mins</div>
             <div class="session-rating">&#9733;&#9733;&#9733;&#9733;&#9733; 5.0</div>
             <div class="session-price">
-                <span class="current">&#8377;99</span>
-                <span class="original">&#8377;1,999</span>
+                <span class="current">&#8377;249</span>
+                <span class="original">&#8377;999</span>
             </div>
-            <a href="#" onclick="openBooking('leadership','Leadership Coaching (VC)',99,60);return false;" class="session-btn">Book Now &rarr;</a>
+            <a href="#" onclick="openBooking('leadership','Leadership Coaching (VC)',249,30);return false;" class="session-btn">Book Now &rarr;</a>
         </div>
     </div>
 </section>
@@ -1430,7 +1417,7 @@
                 <div style="text-align:center;">
                     <div class="success-check">&#9989;</div>
                     <h3 style="margin-bottom:.5rem;">Booking Confirmed!</h3>
-                    <p style="color:var(--text-2);margin-bottom:1rem;">A confirmation has been sent to <strong>yasir.grc08@gmail.com</strong>.</p>
+                    <p id="emailStatus" style="color:var(--text-2);margin-bottom:1rem;">Sending your confirmation email&hellip;</p>
                     <div class="booking-summary" id="successSummary"></div>
                     <button class="modal-btn modal-btn-primary" style="margin-top:1rem;" onclick="closeBooking()">Done</button>
                 </div>
@@ -1596,6 +1583,9 @@
 
     // BOOKING SYSTEM + RAZORPAY
     const RAZORPAY_KEY='rzp_live_SdMpxrq9I6XhNj';
+    // Booking emails: one confirmation to the customer and one notification to Aafreen.
+    // Mail is sent through the EmailJS service below; connect aafreen.sutso@gmail.com to that service so mail comes from her address.
+    const BOOKING_EMAIL={serviceId:'service_phdrjfp',templateId:'template_k2ysz6k',owner:'aafreen.sutso@gmail.com',ownerName:'Aafreen Naaz'};
     let booking={type:'',name:'',price:0,duration:0,date:'',time:'',userName:'',userEmail:'',userPhone:'',userMsg:''};
     const DAYS=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
     const MONTHS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -1633,8 +1623,7 @@
     function generateTimes(){
         const grid=document.getElementById('timeGrid'); grid.innerHTML='';
         const isWeekend=(booking.dateDow===0||booking.dateDow===6);
-        let interval=30;
-        if(booking.type==='call')interval=20; else if(booking.type==='chat')interval=15;
+        const interval=booking.duration||30;
         const startHour=isWeekend?9:17; const endHour=23; const slots=[];
         for(let h=startHour;h<endHour;h++){
             for(let m=0;m<60;m+=interval){
@@ -1690,16 +1679,29 @@
         sendEmailNotification(paymentId);
     }
     function sendEmailNotification(paymentId){
+        const status=document.getElementById('emailStatus');
+        const setStatus=html=>{ if(status) status.innerHTML=html; };
+        const safe=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
         const feedbackLink=generateFeedbackLink(booking.name);
-        const templateParams={session:booking.name,duration:booking.duration?booking.duration+' mins':'N/A',date:booking.date,time:booking.time,name:booking.userName,email:booking.userEmail,phone:booking.userPhone,message:(booking.userMsg||'No message')+'\n\nFeedback Link: '+feedbackLink,amount:'₹'+booking.price,payment_id:paymentId,to_email:'yasir.grc08@gmail.com',reply_to:booking.userEmail};
-        if(typeof emailjs!=='undefined'){
-            emailjs.send('service_phdrjfp','template_k2ysz6k',templateParams).then(function(){}).catch(function(err){alert('Payment successful! But email notification failed. Please take a screenshot.'); openMailtoFallback(paymentId);});
-        } else { openMailtoFallback(paymentId); }
+        const details={session:booking.name,duration:booking.duration?booking.duration+' mins':'N/A',date:booking.date,time:booking.time,name:booking.userName,email:booking.userEmail,phone:booking.userPhone,amount:'₹'+booking.price,payment_id:paymentId,from_name:BOOKING_EMAIL.ownerName};
+        const customerMail={...details,to_email:booking.userEmail,to_name:booking.userName,reply_to:BOOKING_EMAIL.owner,
+            heading:'Your session with Aafreen Naaz is booked!',
+            message:'Hi '+booking.userName+',\n\nThank you for booking '+booking.name+' on '+booking.date+' at '+booking.time+'. Aafreen will share the meeting link before your session. Reply to this email if you need to reschedule.\n\nAfter your session, please share feedback here: '+feedbackLink+'\n\nWarm regards,\nAafreen Naaz\n'+BOOKING_EMAIL.owner};
+        const ownerMail={...details,to_email:BOOKING_EMAIL.owner,to_name:BOOKING_EMAIL.ownerName,reply_to:booking.userEmail,
+            heading:'New booking: '+booking.name,
+            message:'New session booked by '+booking.userName+' ('+booking.userEmail+', '+booking.userPhone+').\n\nCustomer message: '+(booking.userMsg||'No message')+'\n\nFeedback link: '+feedbackLink};
+        if(typeof emailjs==='undefined'){ setStatus('Your booking is confirmed. Email could not be sent from this browser, so please keep this screen as your receipt.'); openMailtoFallback(paymentId); return; }
+        Promise.allSettled([emailjs.send(BOOKING_EMAIL.serviceId,BOOKING_EMAIL.templateId,customerMail),emailjs.send(BOOKING_EMAIL.serviceId,BOOKING_EMAIL.templateId,ownerMail)]).then(function(results){
+            const customerOk=results[0].status==='fulfilled', ownerOk=results[1].status==='fulfilled';
+            if(customerOk) setStatus('A confirmation has been sent to <strong>'+safe(booking.userEmail)+'</strong>. Questions? Write to <strong>'+BOOKING_EMAIL.owner+'</strong>.');
+            else setStatus('Your booking is confirmed, but we could not email <strong>'+safe(booking.userEmail)+'</strong>. Please keep this screen as your receipt; Aafreen will contact you.');
+            if(!ownerOk) openMailtoFallback(paymentId);
+        });
     }
     function openMailtoFallback(paymentId){
         const subject=encodeURIComponent('New Booking: '+booking.name+' — '+booking.date);
         const body=encodeURIComponent('New Session Booked!\n\nSession: '+booking.name+'\nDate: '+booking.date+'\nTime: '+booking.time+'\nCustomer: '+booking.userName+'\nEmail: '+booking.userEmail+'\nPhone: '+booking.userPhone+'\nMessage: '+(booking.userMsg||'N/A')+'\nAmount: ₹'+booking.price+'\nPayment ID: '+paymentId);
-        window.open('mailto:yasir.grc08@gmail.com?subject='+subject+'&body='+body,'_blank');
+        window.open('mailto:'+BOOKING_EMAIL.owner+'?subject='+subject+'&body='+body,'_blank');
     }
 
     // FEEDBACK SYSTEM
@@ -1896,37 +1898,6 @@
         document.getElementById('dsaCategories').innerHTML=catHtml;
     }
     renderCourses();
-</script>
-
-<!-- Background Music -->
-<audio id="bgMusic" loop preload="auto" autoplay>
-    <source src="bgmusic.mp3" type="audio/mpeg">
-</audio>
-<button class="music-toggle playing" id="musicToggle" title="Toggle Music">
-    <div class="bars"><div class="bar" style="height:6px;"></div><div class="bar" style="height:10px;"></div><div class="bar" style="height:4px;"></div><div class="bar" style="height:8px;"></div></div>
-</button>
-<script>
-(function(){
-    var audio=document.getElementById('bgMusic');
-    var btn=document.getElementById('musicToggle');
-    audio.volume=0.3;
-    // Try autoplay immediately
-    audio.play().catch(function(){});
-    // Button only used to stop/resume
-    btn.addEventListener('click',function(){
-        if(audio.paused){audio.play().then(function(){btn.classList.add('playing');}).catch(function(){});}
-        else{audio.pause();btn.classList.remove('playing');}
-    });
-    // Fallback: if browser blocked autoplay, start on any interaction
-    function tryPlay(){
-        if(!audio.paused)return;
-        audio.play().then(function(){btn.classList.add('playing');}).catch(function(){});
-    }
-    document.addEventListener('click',tryPlay,{once:true});
-    document.addEventListener('scroll',tryPlay,{once:true});
-    document.addEventListener('keydown',tryPlay,{once:true});
-    document.addEventListener('touchstart',tryPlay,{once:true});
-})();
 </script>
 
 <!-- Admin FAB -->
